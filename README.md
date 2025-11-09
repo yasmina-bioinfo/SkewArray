@@ -2,6 +2,10 @@
 **Genome Analysis Fundamentals**  
 *(English and Français)*  
 
+**Période / Period :** 2025-11-06 → 2025-11-08  
+**Durée approximative / Approx. duration :** 3 jours / 3 days  
+**Statut / Status :** Terminé ✅ / Completed ✅
+
 ---
 
 ## ENG Overview  
