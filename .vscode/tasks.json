@@ -1,0 +1,31 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "🔄 Sync to GitHub",
+      "type": "shell",
+      "command": "sync_safe.bat",
+      "args": ["${input:commitMsg}"],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "shell": {
+          "executable": "cmd.exe",
+          "args": ["/d", "/c"]
+        }
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ],
+  "inputs": [
+    {
+      "id": "commitMsg",
+      "type": "promptString",
+      "description": "Message du commit",
+      "default": "Auto update - ${workspaceFolderBasename}"
+    }
+  ]
+}
