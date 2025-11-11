@@ -1,4 +1,4 @@
-import matplotlib as plt 
+import matplotlib.pyplot as plt
 
 def gc_variation(base): #The function counts the number of G and C nucleotides.
     b = base.upper() #The function converts the base to uppercase
@@ -20,7 +20,7 @@ def compute_skew(genome): # Calculate the skew of the sequence.
             skew.append(skew[-1])
     return skew
 
-print("compte_skew('ATTGGCACTGAACCT)", compute_skew("ATTGGCACTGAACC")) #Python will print the text followed by the count value.
+print("compute_skew('AGCGCGTTGCCGATGCGTACG')", compute_skew("AGCGCGTTGCCGATGCGTACGGC"))  #Python will print the text followed by the count value.
 
 # Proceed to display the results in a structured table format.
 def show_gc_variation(genome):
@@ -28,12 +28,12 @@ def show_gc_variation(genome):
     print("----------------------------")
     skew = [0]
     for i, base in enumerate(genome, start=1):
-        d = gc_variation(genome) #Call the function here to measure the local effect of each base on the G/C imbalance.
+        d = gc_variation(base) #Call the function here to measure the local effect of each base on the G/C imbalance.
         current = skew[-1] + d #Add the variation of the current base to the last recorded value in the skew list.
         skew.append(current) #Append the new skew value (current) to the skew list for plotting or further analysis.
         print(f"{i:5d} |   {base}   | {d:+d} | {current:d}") #Use an f-string to format and neatly align the calculation progress at each position to visualize the skew dynamics.
 
-show_gc_variation("ATTGGCACTGAACC")
+show_gc_variation("AGCGCGTTGCCGATGCGTACG")
 
 def min_positions(skew): #Return the list of indices (positions) where the skew reaches its minimum value.
     m = min(skew)
