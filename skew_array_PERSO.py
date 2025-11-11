@@ -21,7 +21,7 @@ def compute_skew(genome): # Calculate the skew of the sequence.
             skew.append(skew[-1])
     return skew
 
-print("compute_skew('CAGTCGCGGATCGATCGTACGCGTACGTGC')", compute_skew("CAGTCGCGGATCGATCGTACGCGTACGTGC"))  #Python will print the text followed by the count value.
+print("compute_skew('AGCGCGTTGCCGATGCGTACG')", compute_skew("AGCGCGTTGCCGATGCGTACG"))  #Python will print the text followed by the count value.
 
 # Proceed to display the results in a structured table format.
 def show_gc_variation(genome):
@@ -61,6 +61,6 @@ def plot_skew(genome):
     plt.show()
 
 #Compute and export the values.
-show_gc_variation("CAGTCGCGGATCGATCGTACGCGTACGTGC")
+show_gc_variation("AGCGCGTTGCCGATGCGTACG")
 #Generate the plot
-plot_skew("CAGTCGCGGATCGATCGTACGCGTACGTGC")
+plot_skew("AGCGCGTTGCCGATGCGTACG")

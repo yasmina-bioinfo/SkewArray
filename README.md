@@ -2,8 +2,8 @@
 **Genome Analysis Fundamentals**  
 *(English and Français)*  
 
-**Période / Period :** 2025-11-06 → 2025-11-08  
-**Durée approximative / Approx. duration :** 3 jours / 3 days  
+**Période / Period :** 2025-11-06 → 2025-11-11  
+**Durée approximative / Approx. duration :** 6 jours / 6 days  
 **Statut / Status :** Terminé ✅ / Completed ✅
 
 ---
@@ -21,15 +21,9 @@ To calculate the cumulative GC bias along a DNA sequence and visualize its varia
 
 ### Example  
 ```bash
-python skew_array.py --seq CAGC
+python skew_array_PERSO.py --seq "AGCGCGTTGCCGATGCGTACG" and "CAGTCGCGGATCGATCGTACGCGTACGTGC"
 ```
 
-**Expected Output**  
-```
-Skew: [0, -1, -1, 0, -1]
-Indices of minimum skew: [1, 2, 4]
-Graph saved as: skew_plot.png
-```
 
 **Generated Graph**  
 The file `skew_plot.png` contains the GC skew curve across the sequence, where changes in slope may correspond to replication origin and terminus.
@@ -54,15 +48,10 @@ Calculer le biais cumulatif entre les bases G et C le long d’une séquence et 
 
 ### Exemple  
 ```bash
-python skew_array.py --seq CAGC
+python skew_array_PERSO.py --seq seq "AGCGCGTTGCCGATGCGTACG" and "CAGTCGCGGATCGATCGTACGCGTACGTGC"
 ```
 
-**Résultat attendu**  
-```
-Skew : [0, -1, -1, 0, -1]
-Indices du minimum : [1, 2, 4]
-Graphique enregistré sous : skew_plot.png
-```
+
 
 **Graphique généré**  
 Le fichier `skew_plot.png` affiche la courbe du biais GC cumulatif, où les changements de direction traduisent les zones critiques de réplication.
