@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 
 def delta(base):
     """Retourne +1 pour G, -1 pour C, 0 sinon."""
-    b = base.upper()  # rend la lettre insensible à la casse
+    b = base.upper()  
     if b == "G":
         return 1
     if b == "C":
