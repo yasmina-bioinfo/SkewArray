@@ -51,8 +51,6 @@ Calculer le biais cumulatif entre les bases G et C le long d’une séquence et 
 python skew_array_PERSO.py --seq seq "AGCGCGTTGCCGATGCGTACG" and "CAGTCGCGGATCGATCGTACGCGTACGTGC"
 ```
 
-
-
 **Graphique généré**  
 Le fichier `skew_plot.png` affiche la courbe du biais GC cumulatif, où les changements de direction traduisent les zones critiques de réplication.
 
@@ -61,6 +59,9 @@ Le fichier `skew_plot.png` affiche la courbe du biais GC cumulatif, où les chan
 - `skew_plot.png` : graphique enregistré  
 - `README.md` : ce fichier descriptif  
 
+### Personal notes/ Notes personnelles
+This work was initially completed in skew_array.py with support from AI tools and Coursera. I then reworked, analyzed, and tested the code in skew_array_PERSO.py as a hands-on practice exercise.
+Ce travail a été réalisé dans skew_array.py avec l'aide de IA et Coursera. Puis, j'ai retravaillé le code, analysé et testé dans skew_array_PERSO.py, en guise d'exercice d'application.
 ---
 
 > — Yasmina Soumahoro
